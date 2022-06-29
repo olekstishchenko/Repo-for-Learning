@@ -92,7 +92,7 @@ header{
 }
 .search_field+a{
     border: 1px solid #ae4b5d;
-    padding: 10px 10px 9px 11px;
+    padding: 11px 9px 7px 9px;
     background: #ae4b5d;
     border-radius: 5px;
 }
@@ -100,6 +100,11 @@ header{
 .search_field+a>span{
     font-size: 17px;
     color: white;
+}
+
+div.search >a{
+    position: relative;
+    top: 2px;
 }
 
 .slider_content{
