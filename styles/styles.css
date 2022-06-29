@@ -301,6 +301,10 @@ li.nav_list-item > a{
     margin-bottom: 3px;
 }
 
+.button:hover{
+    border: 5px solid #95151f;
+}
+
 .more_about{
     padding-top: 25px;
 }
