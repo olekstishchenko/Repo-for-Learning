@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,8 +66,13 @@ header{
 .header_content{
     padding: 20px 8px 14px;
     color: #a5adb8;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
@@ -68,6 +80,7 @@ header{
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    -webkit-filter: drop-shadow(0px 1px 0.5px rgba(0,0,0,0.05));
     filter: drop-shadow(0px 1px 0.5px rgba(0,0,0,0.05));
 }
 
@@ -151,7 +164,11 @@ div.search >a{
 }
 
 .nav_list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 
 }
@@ -211,7 +228,12 @@ li.nav_list-item > a{
 }
 
 .form_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -254,7 +276,11 @@ li.nav_list-item > a{
 
 .main_content{
     background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -310,7 +336,10 @@ select {
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
+    -webkit-filter: drop-shadow(0px 5px 2.5px rgba(0,0,0,0.19));
     filter: drop-shadow(0px 5px 2.5px rgba(0,0,0,0.19));
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#95151f), to(#b0242e));
+    background-image: -o-linear-gradient(bottom, #95151f 0%, #b0242e 100%);
     background-image: linear-gradient(0deg, #95151f 0%, #b0242e 100%);
     border: 5px solid #ffffff;
     padding: 11px 18px 12px 18px;
@@ -374,12 +403,16 @@ select {
 }
 
 .card_block{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 11px;
 }
 
 .card{
     max-width: 27%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     margin-right: 15px;
 }
@@ -398,7 +431,11 @@ select {
 }
 
 .list_block{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 100%;
     margin-bottom: 34px;
@@ -429,7 +466,7 @@ select {
 
 
 ul.styled, li > ul{
-  list-style: initial;
+    list-style: initial;
     list-style-type: disc;
     margin-left: 10px;
 }
@@ -471,6 +508,7 @@ tr{
     line-height: 24px;
     color: #a5adb8;
     background-color: #272d33;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -503,7 +541,11 @@ main{
 }
 
 .footer_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     max-width: 92%;
     padding: 29px 0 27px 9px;
@@ -515,6 +557,7 @@ main{
     padding-bottom: 7px;
     margin-bottom: 13px;
     border-bottom: 1px solid #191c20;
+    -webkit-box-shadow: 0 1px 0 0 #3f464f;
     box-shadow: 0 1px 0 0 #3f464f;
 }
 
@@ -535,7 +578,7 @@ div.footer_list > p{
 }
 
 .red{
-   color: #ae4b5d;
+    color: #ae4b5d;
 
 }
 
@@ -577,7 +620,6 @@ i{
 .styled{
     list-style: initial;
 }
-
 
 
 
