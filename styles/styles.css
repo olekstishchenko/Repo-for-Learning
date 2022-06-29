@@ -283,6 +283,16 @@ li.nav_list-item > a{
     padding: 8px 9px 8px 8px;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5px;
+}
+
 .form_content>input{
     border-radius: 3px;
     border: 1px solid #fffcfc;
@@ -438,13 +448,11 @@ ol.styled{
     width: 97%;
     border-collapse: inherit;
     text-align: center;
-    border-radius: 4px;
     margin-bottom: 59px;
 }
 
 td, th {
     border:solid 1px white;
-    border-radius: 4px;
     padding: 4px 5px;
 }
 
@@ -466,6 +474,20 @@ tr{
 
 td>a{
     color: #d08b98;
+}
+
+th:first-of-type{
+    border-top-left-radius: 4px;
+}
+th:last-of-type{
+    border-top-right-radius: 4px;
+}
+
+tr:last-of-type td:first-of-type{
+    border-bottom-left-radius: 4px;
+}
+tr:last-of-type td:last-of-type{
+    border-bottom-right-radius: 4px;
 }
 
 .footer{
@@ -493,7 +515,7 @@ main{
     box-shadow: 0 1px 0 0 #3f464f;
 }
 
-.ml20{
+.ml11{
     margin-left: -11px;
 }
 
