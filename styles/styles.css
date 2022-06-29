@@ -92,7 +92,7 @@ header{
 }
 .search_field+a{
     border: 1px solid #ae4b5d;
-    padding: 11px 9px 7px 9px;
+    padding: 12px 9px 7px 9px;
     background: #ae4b5d;
     border-radius: 5px;
 }
@@ -449,6 +449,8 @@ ol.styled{
     border-collapse: inherit;
     text-align: center;
     margin-bottom: 59px;
+    border: 1px solid white;
+    border-radius: 4px;
 }
 
 td, th {
@@ -477,6 +479,7 @@ td>a{
 }
 
 th:first-of-type{
+
     border-top-left-radius: 4px;
 }
 th:last-of-type{
