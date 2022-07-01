@@ -1,0 +1,396 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Semibold.woff2') format('woff2'),
+    url('../fonts/GraphikLCG-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Regular.woff2') format('woff2'),
+    url('../fonts/GraphikLCG-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    font-size: 15px;
+    line-height: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.col1{
+    max-width: 8.33%;
+}
+.col2{
+    max-width: 16.67%;
+}
+.col3{
+    max-width: 25%;
+}
+.col4{
+    max-width: 33.33%;
+}
+.col5{
+    max-width: 41.67%;
+}
+.col6{
+    max-width: 50%;
+}
+.col7{
+    max-width: 58.33%;
+}
+.col8{
+    max-width: 66.67%;
+}
+.col9{
+    max-width: 75%;
+}
+.col10{
+    max-width: 83.33%;
+}
+.col11{
+    max-width: 91.67%;
+}
+.col12{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1338px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 25px 0;
+
+
+}
+.header_block1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+
+}
+
+.header_logo{
+    margin-right: 22px;
+}
+
+.header_link{
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+    margin-right: 22px;
+    padding: 13px 1px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+
+
+.header_link:hover{
+    border: 1px solid #FF6336;
+    background: #FF6336;
+    color: #FFFFFF;
+}
+
+.header_block2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+}
+
+.bg-orange{
+    background: #FF6336;
+}
+
+.header_button1{
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+    padding: 15px 36px 13px 37px;
+    border: 1px solid #000000;
+    margin-right: 10px;
+    transition: all ease-in-out 0.3ms;
+}
+
+.header_button1:hover{
+    background: #FF6336;
+    color: #FFFFFF;
+    border: 1px solid #FF6336;
+}
+
+
+
+.header_button2{
+    display: block;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 15px 22px 13px 25px;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.3ms;
+}
+
+.header_button2:hover{
+    background: #FFFFFF;
+    color: #FF6336;
+    border: 1px solid #FF6336;
+}
+
+
+
+
+.font400{
+    font-family: 'Graphik LCG';
+    font-weight: normal;
+}
+
+.font600{
+    font-family: 'Graphik LCG';
+    font-weight: 600;
+}
+
+.container_1{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+
+
+.slider_content{
+    padding: 129px 0 172px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.slider_text{
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 43%;
+}
+
+.slider_header{
+    font-size: 4.33rem;
+    line-height: 4.67rem;
+    margin-bottom: 51px;
+    flex-grow: 1;
+}
+
+.slider_desc{
+    font-size: 1.67rem;
+    line-height: 2.33rem;
+    margin-bottom: 49px;
+}
+
+.slider_buttons{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.slider_button1{
+    display: block;
+    color: #FFFFFF;
+    font-size: 1.07rem;
+    padding: 21px 42px 22px;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.3ms;
+    margin-right: 10px;
+    margin-bottom: 24px;
+}
+
+.slider_button1:hover{
+    background: #FFFFFF;
+    color: #FF6336;
+    border: 1px solid #FF6336;
+}
+
+
+.slider_button2{
+    display: block;
+    color: #000000;
+    font-size: 1.07rem;
+    padding: 21px 28px 22px;
+    border: 1px solid #000000;
+    margin-right: 10px;
+    margin-bottom: 24px;
+    transition: all ease-in-out 0.3ms;
+}
+
+.slider_button2:hover{
+    background: #FF6336;
+    color: #FFFFFF;
+    border: 1px solid #FF6336;
+}
+
+.slider_add{
+    color:#000000;
+    font-size: 1rem;
+    line-height: 1.67rem;
+
+}
+
+.slider_image{
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-top: 29px;
+}
+
+.slider_image>img{
+    max-width: 100%;
+    height: auto;
+}
+
+.brand_wall{
+    background: #FF9C7D;
+}
+
+.brand_wall-content{
+
+    padding: 108px 30px 101px;
+}
+
+.brand_wall-header{
+    max-width: 650px;
+    margin: 0 auto 70px;
+    text-align: center;
+    position: relative;
+    left: 55px;
+
+}
+
+.h2{
+    font-size: 3.33rem;
+    line-height: 4rem;
+}
+
+.brand_wall-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.brand_wall-images > a{
+    margin-right: -8px;
+}
+
+.main_adv_content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.adv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 91px 0 155px;
+
+}
+
+.adv_card{
+    margin: auto 0;
+}
+
+
+.adv_desc{
+    font-size: 1.33rem;
+    line-height: 2rem;
+}
+
+.adv_link{
+
+    font-size: 1.33rem;
+    line-height: 2rem;
+}
+
+.tdn{
+    text-decoration: none;
+}
+
+.mb30{
+    margin-bottom: 30px;
+}
+
+.ml{
+    margin-left: 17px;
+}
+
+.mt{
+    margin-top: 27px;
+}
+
+
+
+
+
+
+
+
+
