@@ -6,6 +6,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="styles/Styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <title>Document</title>
     </head>
     <body>
@@ -13,7 +14,7 @@
             <div class="container">
                 <div class="header_content">
                     <div class="header_block1 col7 font400">
-                        <a class="header_logo " href="#">
+                        <a class="header_logo" id="click" href="#">
                             <img src="img/Lokalise.png" alt="Logo">
                         </a>
                         <a class="header_link" href="#">Product</a>
@@ -25,6 +26,18 @@
                     <div class="header_block2 col3 font600">
                         <a class="header_button1" href="#">Log In</a>
                         <a class="header_button2 bg-orange" href="#">Try it free</a>
+                    </div>
+                    <div class="menu font400">
+                        <img src="img/Menu.png" id="menu" alt="Menu.png">
+                        <div class="menu_content">
+                        <a class="menu_link" href="#">Product</a>
+                        <a class="menu_link" href="#">Features</a>
+                        <a class="menu_link" href="#">Pricing</a>
+                        <a class="menu_link" href="#">Case studies</a>
+                        <a class="menu_link" href="#">Resources</a>
+                        <a class="menu_link" href="#">Log In</a>
+                        <a class="menu_link" href="#">Try it free</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,7 +108,7 @@
                                 Control the localization process
                             </h2>
                             <p class="adv_desc mb30 col11 font400">
-                                Collaborate with your team in a single workspace. Add and assign tasks, track progress, and enjoy a seamless localization workflow where you know who is doing what and when.
+                                Collaborate with your team in a single workspace. Add and assign <span class="tdu">tasks</span> , track progress, and enjoy a seamless localization workflow where you know who is doing what and when.
                             </p>
                             <a class="adv_link mb30 font600 tdn" href="">
                                 <span>Start now</span>
@@ -118,7 +131,7 @@
                                 Shorten time to market
                             </h2>
                             <p class="adv_desc col10 mb30 font400">
-                                Localize your product in parallel with the development cycle. Use the Adobe XD, Figma, and Sketch plugins to start working on translations as soon as the product design is ready. No more idle waiting.
+                                Localize your product in parallel with the development cycle. Use the <span class="tdu">Adobe XD </span>, <span class="tdu">Figma</span>, and <span class="tdu">Sketch</span> plugins to start working on translations as soon as the product design is ready. No more idle waiting.
                             </p>
                             <a class="adv_link font600 tdn" href="">
                                 <span>Start now</span>
@@ -131,7 +144,7 @@
                                 Ensure quality
                             </h2>
                             <p class="adv_desc mb30 col12 font400">
-                                Use built-in tools — e.g. translation memory, machine translation, and QA checks — to enhance the quality and cohesion of translations. Add product screenshots for context and use the in-context editors for instant previews.                        </p>
+                                Use built-in tools — e.g. <span class="tdu">translation memory</span>, machine translation, and <span class="tdu">QA checks</span> — to enhance the quality and cohesion of translations. Add product <span class="tdu">screenshots</span> for context and use the <span class="tdu">in-context editors</span> for instant previews.                        </p>
                             <a class="adv_link mb30 font600 tdn" href="">
                                 <span>Start now</span>
                             </a>
@@ -142,12 +155,12 @@
                             <img src="img/3333%201.png" alt="3333">
                         </div>
                     </div>
-                    <div class="adv col7">
+                    <div class="adv col6">
                         <div class="adv_card">
                             <img src="img/4444%201.png" alt="4444">
                         </div>
                     </div>
-                    <div class="adv col5">
+                    <div class="adv col6">
                         <div class="adv_card ml">
                             <h2 class="h2 col10 mb30 font600">
                                 Less work for developers
@@ -189,7 +202,7 @@
                                     Mobile apps
                                 </h4>
                                 <p class="what_for-card-desc font400">
-                                    Upload any mobile platform language files. Embed Lokalise iOS SDK or Lokalise Android SDK if you prefer.
+                                    Upload any mobile platform language files. Embed <span class="tdu">Lokalise iOS SDK</span> or <span class="tdu">Lokalise Android SDK</span> if you prefer.
                                 </p>
                             </div>
                         </div>
@@ -241,7 +254,302 @@
                 </div>
             </div>
         </section>
+        <section class="for_whom">
+            <div class="container_1">
+                <div class="for_whom_content">
+                    <h2 class="for_whom-header font600">
+                        Boost your localization team’s productivity tenfold
+                    </h2>
+                    <div class="for_whom_card-wrapper">
+                        <div class="for_whom_card col4">
+                            <img src="img/Managers.png" alt="Managers">
+                            <h4 class="for_whom_card-header font600">
+                                Managers
+                            </h4>
+                            <p class="for_whom_card-desc font400">
+                                Update existing and launch new features and products while simultaneously localizing them in multiple languages. Streamline your team's workflow, maximize productivity, and speed up expansion to other markets.
+                            </p>
+                            <a href="" class="more_about font400">
+                                <span class="tdu">Learn more</span>
+                            </a>
+                        </div>
+                        <div class="for_whom_card col4">
+                            <img src="img/Developers.png" alt="Developers">
+                            <h4 class="for_whom_card-header font600">
+                                Developers
+                            </h4>
+                            <p class="for_whom_card-desc font400">
+                                Set up an integration with your code repository or your own custom SDK via Lokalise's <span class="tdu">powerful API</span>. Do that once, and every time you make changes in the code, they'll be automatically imported to Lokalise for translation.                            </p>
+                            <a href="" class="more_about font400">
+                                <span class="tdu">Learn more</span>
+                            </a>
+                        </div>
+                        <div class="for_whom_card col4">
+                            <img src="img/Translators.png" alt="Translators">
+                            <h4 class="for_whom_card-header font600">
+                                Translators
+                            </h4>
+                            <p class="for_whom_card-desc font400">
+                                Eliminate double-work and neverending revisions with visual context (screenshots) and live previews. Improve the quality and speed of your translations with built-in CAT tools, like autocomplete, inline machine translation, and translation memory.                            </p>
+                            <a href="" class="more_about font400">
+                                <span class="tdu">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="CEO">
+            <div class="container_1">
+                <div class="CEO_Content">
+                    <div class="CEO_Content_text col9">
+                        <p class="CEO_Content_desc col11 font400">
+                            “Lokalise has turned a task we were dreading into an absolute pleasure. Great platform, intuitive UX, powerful API. The automatic text recognition for screenshots has been a lifesaver, and over-the-air updates are the icing on the cake.”
+                        </p>
+                        <p class="CEO_name font400">
+                            Edward Cooper,Chief Mobile Officer
+                        </p>
+                        <img src="img/Revolut.png" alt="Revolut">
+                    </div>
+                    <div class="CEO_Photo col3">
+                        <img src="img/CEO_Photo.png" alt="CEO_Photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Capterra">
+            <div class="container">
+                <div class="Capterra_content">
+                    <div class="Capterra_block1">
+                        <img src="img/Cake.png" alt="Cake.png">
+                        <h3 class="Capterra_desc col9 font600">
+                            The most-loved translation management software
+                        </h3>
+                    </div>
+                    <div class="Capterra_block2 col5">
+                        <div class="Capterra_card">
+                            <img class="Cap_img1" src="img/Logo1.png" alt="Logo1">
+                            <img class="Cap_img2" src="img/Stars.png" alt="Stars">
+                            <p class="user_love font400">
+                                USERS LOVE US
+                            </p>
+                        </div>
+                        <div class="Capterra_card">
+                            <img class="Cap_img1" src="img/Capterra.png" alt="Capterra.png">
+                            <img class="Cap_img2" src="img/Stars.png" alt="Stars">
+                            <p class="user_love font400">
+                                HIGHEST RATE
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Localise_tools">
+            <div class="container_1">
+                <div class="tools_content">
+                    <h2 class="tools_header col8 font600">
+                        Integrate Lokalise with your work tools
+                    </h2>
+                    <p class="tools_desc col5 font400">
+                        Automate processes, eliminate routine tasks, and track progress with ease.
+                    </p>
+                    <img class="tools_img col10" src="img/img2.png" alt="img2">
+                    <a class="tools_button font600 bg-orange" href="#">
+                        See all integrations
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="advert">
+            <div class="container_1">
+                <div class="advert_content">
+                    <h2 class="advert_header col8 font600">
+                        Localization made easy. Why wait?                    </h2>
+                    <p class="advert_desc col5 font400">
+                        Try for free or let us show you how it works.                    </p>
+                    <a class="advert_button font600" href="#">
+                        Try it free
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container_1">
+            <div class="footer_content">
+                <div class="footer_block1">
+                    <div class="Case_Studies col4 col-md-6 col-xs-12">
+                        <h4 class="CS_header font600">
+                            Case Studies
+                        </h4>
+                        <img class="CS_img1 col12" src="img/Bikes.png" alt="Bikes.png">
+                        <img class="CS_img2 col12" src="img/Spec%20mini.png" alt="Spec_mini.png">
+                        <p class="CS_desc col9 font400">
+                            Riding towards global success with a 100% teammate enthusiasm
+                        </p>
+                        <a class="CS_button font600" href="">
+                            Read more
+                        </a>
+                    </div>
+                    <div class="cat_block col8 col-md-6 col-xs-12">
+                        <div class="cat_card col3 col-md-6 col-xs-12 ">
+                            <div class="cat_header">
+                                <h5 class="cat_header font600">
+                                    Product
+                                </h5>
+                            </div>
+                            <div class="cat_list col12">
+                                <ul class="cat_list-list font400">
+                                    <li class="cat_list-item">
+                                        <a href="#">For developers</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">For managers</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">For translators</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">For designers</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Integrations</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Security</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Automations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cat_card col3 col-md-6 col-xs-12 ">
+                            <div class="cat_header">
+                                <h5 class="cat_header font600">
+                                    Support
+                                </h5>
+                            </div>
+                            <div class="cat_list col12">
+                                <ul class="cat_list-list font400">
+                                    <li class="cat_list-item">
+                                        <a href="#">Contact</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Documentation</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Status</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Product Updates</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">CLI Tool</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">API Reference</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">iOS and Android SDK</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Supported File Formats</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cat_card col3 col-md-6 col-xs-12 ">
+                            <div class="cat_header">
+                                <h5 class="cat_header font600">
+                                    Company
+                                </h5>
+                            </div>
+                            <div class="cat_list col12">
+                                <ul class="cat_list-list font400">
+                                    <li class="cat_list-item">
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Careers | We`re Hiring</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Case Studies</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Media Kit</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cat_card col3 col-md-6 col-xs-12 ">
+                            <div class="cat_header">
+                                <h5 class="cat_header font600">
+                                    Legal
+                                </h5>
+                            </div>
+                            <div class="cat_list col11">
+                                <ul class="cat_list-list font400">
+                                    <li class="cat_list-item">
+                                        <a href="#">Terms of Service</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Cookie Policy</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Privacy Shield</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">DPA</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">List of Sub-processors</a>
+                                    </li>
+                                    <li class="cat_list-item">
+                                        <a href="#">Candidates Privacy Notice</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_block2">
+                    <div class="footer_block2-left col5">
+                        <img src="img/Lokalise_mini.png" alt="Lokalise_mini">
+                        <p class="footer_desc col6 font400">
+                            Localization workflow for your web and mobile apps, games and digital content.
+                        </p>
+                    </div>
+                    <div class="footer_block2-right col2">
+                        <p class="footer_desc font400">
+                            ©2001-2020
+                        </p>
+                        <p class="footer_desc font400">
+                            All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     </body>
+
+<script>
+    $(document).ready(function (){
+        $('#menu').on('click',function (){
+            $('.menu_content').toggleClass('active');
+        })
+    });
+</script>
 </html>
