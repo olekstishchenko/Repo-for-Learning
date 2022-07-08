@@ -532,7 +532,9 @@ div.brand_wall-images > a{
 
 .what_for_card-content>img{
     margin-bottom: 20px;
+    display: initial;
 }
+
 
 .what_for-card-header{
     font-size: 1.67rem;
@@ -984,21 +986,31 @@ div.brand_wall-images > a{
         justify-content: center;
     }
 
+    .for_whom-header{
+        text-align: center;
+    }
+
     .Capterra_block1 {
         border-right: none;
         border-bottom: 1px solid black;
         margin-bottom: 10px;
+        max-width: initial;
+        justify-content: center;
+    }
 
+    .Capterra_desc{
+        max-width: 100%;
+    }
+
+    .Capterra_content{
+        flex-direction: column;
+        align-items: center;
     }
 
     .col-md-7 {
         max-width: 58.3%;
     }
 
-
-    .col-md-6 {
-        max-width: 50%;
-    }
 
     .col-lg-5 {
         max-width: 41.7%;
@@ -1009,10 +1021,126 @@ div.brand_wall-images > a{
         font-size: 10px;
         line-height: 10px;
     }
+    .col-md-6 {
+        max-width: 50%;
+    }
 
     .col-xs-12{
         max-width: 100%
     }
+
+
+
+    .slider_content{
+        padding: 35px 0 40px;
+    }
+
+    .brand_wall-content {
+        padding: 50px 30px 50px;
+    }
+
+    .adv{
+        margin: 20px 0;
+    }
+
+    .what_for{
+        padding: 50px 30px 50px;
+    }
+    .what_for-header{
+        margin-bottom: 25px;
+    }
+    .what_for_card-content>img {
+        margin-bottom: 10px;
+    }
+
+    .for_whom {
+        padding: 30px 0 50px;
+    }
+
+
+    .for_whom-header{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .for_whom_card{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .for_whom_card>img{
+        display: initial;
+        margin-bottom: 15px;
+    }
+
+    .CEO_Content{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .CEO_Content_text>img{
+        display: initial;
+    }
+
+    .Capterra_block1{
+        flex-direction: column;
+    }
+    .Capterra_content{
+        padding: 50px 0 50px;
+    }
+
+    .Capterra_block2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .Capterra_block2{
+        flex-direction: column;
+    }
+
+    .Capterra_block1>img {
+        margin-right: 0;
+    }
+
+    .Capterra_desc{
+        text-align: center;
+    }
+
+    .Capterra_block2{
+        flex-direction: column;
+    }
+
+    .Capterra_card{
+        margin-bottom: 10px;
+    }
+    .tools_content{
+        padding: 50px 0 50px;
+    }
+
+    .advert_content {
+        padding: 50px 0 50px;
+    }
+    .footer_block1 {
+        padding: 50px 0;
+    }
+    .cat_header {
+        font-size: 2rem;
+    }
+    .cat_list-item>a {
+        font-size: 1.4rem;
+    }
+
+    .footer_block2{
+        padding: 30px 0 30px;
+    }
+
+    .cat_card{
+        text-align: center;
+    }
+
+
+
 
     .footer_block1{
         -webkit-box-orient: vertical;
@@ -1026,10 +1154,10 @@ div.brand_wall-images > a{
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        text-align: center;
+        align-content: center;
     }
 
-    .Case_Studies,.Capterra_block1{
+    .Case_Studies{
         text-align: center;
         text-align: -webkit-center;
 
@@ -1041,6 +1169,117 @@ div.brand_wall-images > a{
 
 
 }
+
+@media  screen and (max-width: 375px){
+    html{
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .slider_content{
+        padding: 35px 0 40px;
+    }
+    .brand_wall-content{
+        padding: 50px 30px 50px;
+    }
+    .brand_wall-images{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .adv{
+        margin: 20px 0;
+    }
+    .h2{
+        font-size: 2.5rem;
+    }
+    .what_for{
+        padding: 50px 30px 50px;
+    }
+    .what_for-header{
+        margin-bottom: 25px;
+    }
+    .what_for_card-content>img {
+        margin-bottom: 10px;
+    }
+
+    .col-md-6 {
+        max-width: 50%;
+    }
+
+    .for_whom {
+        padding: 30px 0 50px;
+    }
+    .col-xs-12{
+        max-width: 100%
+    }
+
+    .for_whom-header{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .for_whom_card{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .for_whom_card>img{
+        display: initial;
+        margin-bottom: 15px;
+    }
+
+    .CEO_Content{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+    .Capterra_content{
+        justify-content: center;
+        padding: 50px 0 50px;
+    }
+
+    .Capterra_block2{
+        flex-direction: column;
+    }
+
+    .Capterra_card{
+        margin-bottom: 10px;
+    }
+
+    .tools_content{
+        padding: 50px 0 50px;
+    }
+
+    .advert_content {
+        padding: 50px 0 50px;
+    }
+    .footer_block1 {
+        padding: 50px 0;
+    }
+    .cat_header {
+        font-size: 2rem;
+    }
+    .cat_list-item>a {
+        font-size: 1.4rem;
+    }
+
+    .footer_block2{
+        padding: 30px 0 30px;
+    }
+
+    .footer_block2-left>p{
+        display: none;
+    }
+    .col-sm-3{
+        max-width: 25%;
+    }
+
+
+
+
+
+
+}
+
 
 
 
