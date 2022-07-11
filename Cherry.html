@@ -32,6 +32,54 @@
                             </span>
                         </a>
                     </div>
+                    <div class="menu font400">
+                        <i class="fa-solid fa-bars" id="menu"></i>
+                        <div class="menu_content">
+                            <ul class="menu_list">
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Sliders
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Styles
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Cherry
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <a href="">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li class="menu_list-item">
+                                    <input type="text" name="Search" class="search_field" placeholder="Search...">
+                                    <a href="">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -43,7 +91,7 @@
                         <h1 class="flet slider_header">Eaten berry</h1>
                         <p class="slider_desc_1">and go for a walk</p>
                         <p class="slider_desc_2">Today good weather...</p>
-                        <p class="slider_desc_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        <p class="slider_desc_3 col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                             consequat.</p>
@@ -90,7 +138,9 @@
                                 </a>
                             </li>
                         </ul>
+
                     </nav>
+
                 </div>
             </div>
             <div class="breadcrumbs">
@@ -111,7 +161,12 @@
             <div class="main">
                 <div class="container">
                     <div class="main_content">
-                        <aside class="aside col3">
+                        <div class="contact_button" id="contact_button">
+                        <span class="contact_button-link" >
+                            Contact Us
+                        </span>
+                        </div>
+                        <aside class="aside col3 col-md-12">
                             <div class="sidebar ">
                                 <div class="form">
                                     <form class="form_content" action="https://fom.in.ua/echo" method="post">
@@ -153,7 +208,7 @@
                             </section>
 
                         </aside>
-                        <section class="magazine">
+                        <section class="magazine col9 col-md-12">
                             <h2 class="flet magazine_header">
                                 What We Do...
                             </h2>
@@ -164,7 +219,7 @@
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                             <div class="card_block">
-                                <div class="card">
+                                <div class="card col4 col-md-12">
                                     <div class="card_content">
                                         <h3 class="card_header">
                                             Admin panel
@@ -174,7 +229,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card col4 col-md-12">
                                     <div class="card_content">
                                         <h3 class="card_header">
                                             Shortcodes
@@ -184,7 +239,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card col4 col-md-12">
                                     <div class="card_content">
                                         <h3 class="card_header">
                                             Videos
@@ -199,8 +254,8 @@
                                 <h2 class="flet lists_header">
                                     Lists
                                 </h2>
-                                <div class="list_block">
-                                    <div class="list styled">
+                                <div class="list_block col-md-6 col-s-9">
+                                    <div class="list styled col-md-12">
                                         <div class="list_content">
                                             <h4 class="list_header">
                                                 List style type circle <span class="bg-gray"> &#8249ul&#8250 </span>
@@ -223,7 +278,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="list">
+                                    <div class="list col-md-12">
                                         <div class="list_content">
                                             <h4 class="list_header">
                                                 Unstyled <span class="bg-gray"> &#8249ul class="unstyled&#8250 </span>
@@ -246,7 +301,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="list">
+                                    <div class="list col-md-12">
                                         <div class="list_content">
                                             <h4 class="list_header">
                                                  Ordered <span class="bg-gray"> &#8249ol&#8250</span>
@@ -263,7 +318,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="Table_block">
+                            <div class="Table_block col12">
                                 <h2 class="flet lists_header">
                                     Table
                                 </h2>
@@ -446,5 +501,20 @@
             $( "#datepicker" ).datepicker();
         } );
     </script>
+    <script>
+        $(document).ready(function (){
+            $('#menu').on('click',function (){
+                $('.menu_content').toggleClass('active');
+            })
+        });
+    </script>
+    <script>
+        $(document).ready(function (){
+            $('#contact_button').on('click',function (){
+                $('.sidebar').toggleClass('active');
+            })
+        });
+    </script>
+
 
 </html>
