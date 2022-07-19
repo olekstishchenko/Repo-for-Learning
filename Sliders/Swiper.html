@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Swiper</title>
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="Styles/Swiper.css">
+
+        <link
+                rel="stylesheet"
+                href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <link type="text/css" rel="stylesheet" href="magiczoomplus/magiczoomplus/magiczoomplus.css"/>
+        <script type="text/javascript" src="magiczoomplus/magiczoomplus/magiczoomplus.js"></script>
+    </head>
+    <body>
+<div class="swiper-container">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_1.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_1.jpg" /></a>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_2.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_2.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_3.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_3.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_4.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_4.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_5.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_5.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_6.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_6.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_7.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_7.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_8.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomPosition: left; expand:no;"><img src="img/img_8.jpg" /></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <a href="img/img_9.jpg" class="MagicZoom" data-options="zoomWidth: 50%; zoomHeight:100%; zoomPosition: left; expand:no;"><img src="img/img_9.jpg" /></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+<!--        <div class="swiper-scrollbar"></div>-->
+    </div>
+
+    <div thumbsSlider=""  class=" swiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_1.jpg" alt="img_1">
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_2.jpg" alt="img_2">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_3.jpg" alt="img_3">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_4.jpg" alt="img_4">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_5.jpg" alt="img_5">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_6.jpg" alt="img_6">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_7.jpg" alt="img_7">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container">
+                    <img src="img/img_8.jpg" alt="img_8">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-zoom-container" data-swiper-zoom="5">
+                    <img src="img/img_9.jpg" alt="img_9">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper2", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 1,
+            breakpoints: {
+                320: {
+                    slidesPerView: 2
+                },
+                640: {
+                    slidesPerView: 3
+                },
+                768:{
+                    slidesPerView: 4
+                },
+                1024:{
+                    slidesPerView:6
+                }
+            },
+            freeMode: true,
+            watchSlidesProgress: true,
+
+        });
+        var swiper2 = new Swiper(".swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable:true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 5000,
+            // },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            loop:{
+                loop:true,
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+            zoom: true,
+        });
+    </script>
+<script>
+    function imageZoom(imgID, resultID) {
+    var img, lens, result, cx, cy;
+    img = document.getElementById(imgID);
+    result = document.getElementById(resultID);
+    /*create lens:*/
+    lens = document.createElement("DIV");
+    lens.setAttribute("class", "img-zoom-lens");
+    /*insert lens:*/
+    img.parentElement.insertBefore(lens, img);
+    /*calculate the ratio between result DIV and lens:*/
+    cx = result.offsetWidth / lens.offsetWidth;
+    cy = result.offsetHeight / lens.offsetHeight;
+    /*set background properties for the result DIV:*/
+    result.style.backgroundImage = "url('" + img.src + "')";
+    result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+    /*execute a function when someone moves the cursor over the image, or the lens:*/
+    lens.addEventListener("mousemove", moveLens);
+    img.addEventListener("mousemove", moveLens);
+    /*and also for touch screens:*/
+    lens.addEventListener("touchmove", moveLens);
+    img.addEventListener("touchmove", moveLens);
+
+    function moveLens(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image:*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    /*calculate the position of the lens:*/
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /*prevent the lens from being positioned outside the image:*/
+    if (x > img.width - lens.offsetWidth) {
+    x = img.width - lens.offsetWidth;
+    }
+    if (x < 0) {
+    x = 0;
+    }
+    if (y > img.height - lens.offsetHeight) {
+    y = img.height - lens.offsetHeight;
+    }
+    if (y < 0) {
+    y = 0;
+    }
+    /*set the position of the lens:*/
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /*display what the lens "sees":*/
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+    }
+
+    function getCursorPos(e) {
+    var a, x = 0,
+    y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {
+    x: x,
+    y: y
+    };
+    }
+    }
+
+    // Initiate zoom effect:
+    imageZoom("myimage", "myresult");
+    </script>
+    </body>
+</html>
