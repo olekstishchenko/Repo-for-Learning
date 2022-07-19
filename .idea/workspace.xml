@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="826d3964-f62f-468d-8e5d-850ef6d515d3" name="Changes" comment="Create a branch for Sliders">
+    <list default="true" id="826d3964-f62f-468d-8e5d-850ef6d515d3" name="Changes" comment="Finish Swiper with Magic Zoom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sliders/Slick.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sliders/Slick.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sliders/Swiper.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sliders/Swiper.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -22,6 +24,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2C9wrOrRvOm8O8lvpXuh1GyrIFl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,7 +67,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658228466582</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finish Swiper with Magic Zoom">
+      <created>1658251427052</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658251427052</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +138,7 @@
     <MESSAGE value="Add all images to gallery" />
     <MESSAGE value="Change alt names for images" />
     <MESSAGE value="Create a branch for Sliders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a branch for Sliders" />
+    <MESSAGE value="Finish Swiper with Magic Zoom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish Swiper with Magic Zoom" />
   </component>
 </project>
