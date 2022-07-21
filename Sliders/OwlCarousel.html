@@ -5,9 +5,124 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.green.css">
+    <link rel="stylesheet" href="Styles/Owl.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="owl-carousel owl-theme" id="sync1">
+            <div><img class="zoom-img" id="zoom_01" src="img/img_1.jpg" data-zoom-image="img/img_1.jpg" width="700" alt="img1"> </div>
+            <div><img class="zoom-img" id="zoom_02" src="img/img_2.jpg" data-zoom-image="img/img_2.jpg" width="700" alt="img2"> </div>
+            <div><img class="zoom-img" id="zoom_03" src="img/img_3.jpg" data-zoom-image="img/img_3.jpg" width="700" alt="img3"> </div>
+            <div><img class="zoom-img" id="zoom_04" src="img/img_4.jpg" data-zoom-image="img/img_4.jpg" width="700" alt="img4"> </div>
+            <div><img class="zoom-img" id="zoom_05" src="img/img_5.jpg" data-zoom-image="img/img_5.jpg" width="700" alt="img5"> </div>
+            <div><img class="zoom-img" id="zoom_06" src="img/img_6.jpg" data-zoom-image="img/img_6.jpg" width="700" alt="img6"> </div>
+            <div><img class="zoom-img" id="zoom_07" src="img/img_7.jpg" data-zoom-image="img/img_7.jpg" width="700" alt="img7"> </div>
+            <div><img class="zoom-img" id="zoom_08" src="img/img_8.jpg" data-zoom-image="img/img_8.jpg" width="700" alt="img8"> </div>
 
+        </div>
+        <div class="owl-carousel owl-theme" id="sync2">
+            <div><img src="img/img_1.jpg" alt="img1"> </div>
+            <div><img src="img/img_2.jpg" alt="img2"> </div>
+            <div><img src="img/img_3.jpg" alt="img3"> </div>
+            <div><img src="img/img_4.jpg" alt="img4"> </div>
+            <div><img src="img/img_5.jpg" alt="img5"> </div>
+            <div><img src="img/img_6.jpg" alt="img6"> </div>
+            <div><img src="img/img_7.jpg" alt="img7"> </div>
+            <div><img src="img/img_8.jpg" alt="img8"> </div>
+        </div>
+    </div>
 </body>
+    <script>
+        $(document).ready(function() {
+
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+            var slidesPerPage = 4; //globaly define number of elements per page
+            var syncedSecondary = true;
+
+            sync1.owlCarousel({
+                items : 1,
+                slideSpeed : 2000,
+                nav: false,
+                autoplay: false,
+                dots: true,
+                loop: true,
+                responsiveRefreshRate : 200,
+                }).on('changed.owl.carousel', syncPosition);
+
+            sync2
+                .on('initialized.owl.carousel', function () {
+                    sync2.find(".owl-item").eq(0).addClass("current");
+                })
+                .owlCarousel({
+                    items : slidesPerPage,
+                    dots: false,
+                    nav: false,
+                    smartSpeed: 200,
+                    slideSpeed : 500,
+                    slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+                    responsiveRefreshRate : 100
+                }).on('changed.owl.carousel', syncPosition2);
+
+            function syncPosition(el) {
+                //if you set loop to false, you have to restore this next line
+                //var current = el.item.index;
+
+                //if you disable loop you have to comment this block
+                var count = el.item.count-1;
+                var current = Math.round(el.item.index - (el.item.count/2) - .5);
+
+                if(current < 0) {
+                    current = count;
+                }
+                if(current > count) {
+                    current = 0;
+                }
+
+                //end block
+
+                sync2
+                    .find(".owl-item")
+                    .removeClass("current")
+                    .eq(current)
+                    .addClass("current");
+                var onscreen = sync2.find('.owl-item.active').length - 1;
+                var start = sync2.find('.owl-item.active').first().index();
+                var end = sync2.find('.owl-item.active').last().index();
+
+                if (current > end) {
+                    sync2.data('owl.carousel').to(current, 100, true);
+                }
+                if (current < start) {
+                    sync2.data('owl.carousel').to(current - onscreen, 100, true);
+                }
+            }
+
+            function syncPosition2(el) {
+                if(syncedSecondary) {
+                    var number = el.item.index;
+                    sync1.data('owl.carousel').to(number, 100, true);
+                }
+            }
+
+            sync2.on("click", ".owl-item", function(e){
+                e.preventDefault();
+                var number = $(this).index();
+                sync1.data('owl.carousel').to(number, 300, true);
+            });
+        });
+    </script>
+    <script>
+        $('.zoom-img').ezPlus({
+            zoomType: 'lens',
+            lensShape: 'round',
+            lensSize: 200
+        });
+    </script>
 </html>
