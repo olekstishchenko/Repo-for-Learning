@@ -1,3 +1,11 @@
-header {
-  background: red;
+div {
+  height: 200px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.h400 {
+  height: 400px;
 }
