@@ -1,0 +1,122 @@
+.main-container
+  padding: 42px 0
+  background-image: url("../img/H.svg")
+  background-repeat: no-repeat
+  background-position: top
+
+
+.header_content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 254px
+
+
+
+.dot
+  display: block
+  border: 3px solid white
+  border-radius: 100%
+  margin: 6px
+
+.row, .header_list
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: center
+
+.row
+  padding: 7px 0
+
+.header_list-item
+  margin-right: 15px
+  border-bottom: 1px solid transparent
+  transition: all ease-in-out
+  >a:hover
+    color: #F0145A
+    border-bottom: 1px solid #F0145A
+
+.fb_logo:hover
+  color: #F0145A
+
+
+
+.header_list-item:last-of-type
+  margin-right: 0
+
+.lang-button
+  font-size: 0.86rem
+  line-height: 1.07rem
+  padding: 5px 7px
+  border: 1px solid transparent
+  border-radius: 8px
+  &:hover
+    background: rgba(255, 255, 255, 0.2)
+
+.main_header
+  text-align: center
+  margin-bottom: 432px
+
+.button
+  position: absolute
+  left: 48vw
+  bottom: 18vh
+
+.arrow
+  position: relative
+  width: 42px
+  height: 42px
+  border: 2px solid #FFFFFF
+  border-radius: 50%
+
+  &:after
+    position: absolute
+    top: 10px
+    left: 12px
+    content: ""
+    display: block
+    width: 14px
+    height: 14px
+    border-left: 2px solid #FFFFFF
+    border-bottom: 2px solid #FFFFFF
+    transform: rotate(315deg)
+  &:hover
+    border: 2px solid #F0145A
+    &:after
+      border-left: 2px solid #F0145A
+      border-bottom: 2px solid #F0145A
+
+.tab_menu
+  display: flex
+  & *
+    flex-grow: 1
+    flex-shrink: 0
+  &-list
+    text-align: end
+    padding-right: 56px
+    padding-top: 11px
+  &-item
+    margin-bottom: 24px
+    &:last-of-type
+       margin-bottom: 10px
+    &-link:hover
+      background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%)
+      -webkit-background-clip: text
+      color: transparent
+  &-desc
+    padding-left: 67px
+    padding-top: 41px
+    border-left: 4px solid #B3B3BA
+    &-header
+      margin-bottom: 28px
+    &-p
+      font-size: 1.18rem
+      line-height: 1.87rem
+
+
+
+
+
+
+
+

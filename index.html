@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6bab57e121.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="bg-grad-supersoft">
+    <div class="main-container ">
+        <header class="header">
+            <div class="container">
+                <div class="header_content">
+                    <div class="header_content-left">
+                        <img src="img/Name.svg" alt="Name.svg">
+                    </div>
+                    <div class="header_content-right">
+                        <div class="row">
+                            <div class="lang">
+                                <a class="tdn lang-button white" href="">УК</a>
+                                <a class="tdn lang-button white" href="">РУ</a>
+                                <a class="tdn lang-button white" href="">EN</a>
+                            </div>
+                            <div class="dot"></div>
+                            <p class="p f400 white">
+                                Kyiv, Mechnikova str, 14/1
+                            </p>
+                            <div class="dot"></div>
+                            <p class="p f700 white">
+                                <a class="tdn white h4 f700" href="tel:0800211927">0800 211 927</a>
+                            </p>
+                            <div class="dot"></div>
+                            <a class="tdn" href="">
+                                <i class="fa-brands fa-facebook white h3 fb_logo"></i>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <ul class="header_list">
+                                <li class="header_list-item">
+                                    <a class="tdn white h4 f700" href="">about us</a>
+                                </li>
+                                <li class="header_list-item">
+                                    <a class="tdn white h4 f700" href="">services</a>
+                                </li>
+                                <li class="header_list-item">
+                                    <a class="tdn white h4 f700" href="">team</a>
+                                </li>
+                                <li class="header_list-item">
+                                    <a class="tdn white h4 f700" href="">publications</a>
+                                </li>
+                                <li class="header_list-item">
+                                    <a class="tdn white h4 f700" href="">contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_header">
+                    <h1 class="h1 white f700">
+                        you legal solutions provider
+                    </h1>
+                </div>
+            </div>
+            <a class="button" id="scroll_bottom" href="">
+                <div class="arrow"></div>
+            </a>
+        </header>
+        <section class="tab">
+            <div class="container">
+                <div class="tab_menu">
+                    <div class="tab_menu-list col-xl-5">
+                        <ul>
+                            <li class="tab_menu-item h1 f700">
+                                <a class="tab_menu-item-link gray tdn" href="">
+                                    Consistent
+                                </a>
+                            </li>
+                            <li class="tab_menu-item h1 f700">
+                                <a class="tab_menu-item-link gray tdn" href="">
+                                    Customer oriented
+                                </a>
+                            </li>
+                            <li class="tab_menu-item h1 f700">
+                                <a class="tab_menu-item-link gray tdn" href="">
+                                    Innovative
+                                </a>
+                            </li>
+                            <li class="tab_menu-item h1 f700">
+                                <a class="gray tab_menu-item-link tdn" href="">
+                                    Business oriented
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab_menu-desc col-xl-7">
+                        <h2 class="tab_menu-desc-header h2 white f700">
+                            We turn the idea of legal services
+                        </h2>
+                        <p class="tab_menu-desc-p white f400 col-xl-10">
+                            Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry.
+                        </p>
+                        <p class="tab_menu-desc-p white f400 col-xl-10">
+                            Many of them form the practice of applying the law of the sea in Ukraine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+</body>
+<script>
+    $(function(){
+        $('#scroll_bottom').click(function(){
+            $('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 600);
+            return false;
+        });
+    });
+</script>
+
+</html>

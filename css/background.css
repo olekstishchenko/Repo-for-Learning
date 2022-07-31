@@ -1,0 +1,43 @@
+.bg-main {
+  background: #323264;
+}
+
+.bg-main-alt {
+  background: #46466E;
+}
+
+.bg-main-soft {
+  background: #686887;
+}
+
+.accent {
+  background: #F0145A;
+}
+
+.bg-grey {
+  background: #F5F5FA;
+}
+
+.bg-grey-alt {
+  background: #EDEDF7;
+}
+
+.bg-grad-main {
+  background: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+}
+
+.bg-grad-soft {
+  background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+}
+
+.bg-grad-red {
+  background: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+}
+
+.bg-grad-supersoft {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+.bg-grad-red-text {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+}
