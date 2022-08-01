@@ -1,8 +1,9 @@
 .main-container {
-  padding: 42px 0;
+  padding: 42px 0 64px;
   background-image: url("../img/H.svg");
   background-repeat: no-repeat;
   background-position: top;
+  position: relative;
 }
 
 .header_content {
@@ -66,8 +67,8 @@
 
 .button {
   position: absolute;
-  left: 48vw;
-  bottom: 18vh;
+  left: 48.5%;
+  top: 34.3%;
 }
 
 .arrow {
@@ -99,6 +100,7 @@
 
 .tab_menu {
   display: flex;
+  margin-bottom: 58px;
 }
 .tab_menu * {
   flex-grow: 1;

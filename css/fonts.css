@@ -15,7 +15,7 @@
 
 .h3_cap {
   font-size: 1rem;
-  line-height: 1.21rem;
+  line-height: 1.14rem;
   text-transform: capitalize;
 }
 
@@ -27,6 +27,11 @@
 .p {
   font-size: 1rem;
   line-height: 1.63rem;
+}
+
+.card_p {
+  font-size: 1.375rem;
+  line-height: 1.69rem;
 }
 
 .f400 {
@@ -51,4 +56,27 @@
   background: #B3B3BA;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.regular {
+  background: #24A3FF;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.red_text {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.red_text_reversed {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.services_header > a {
+  font-size: 0.876rem;
+  letter-spacing: 1px;
 }
