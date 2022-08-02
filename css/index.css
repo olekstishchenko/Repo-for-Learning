@@ -80,6 +80,54 @@ input {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 }
 
+.bg_logo_1 {
+  background: #1C4280;
+}
+
+.bg_logo_2 {
+  background: #143646;
+}
+
+.bg_logo_3 {
+  background: #F48B30;
+}
+
+.bg_logo_4 {
+  background: #9E4DC3;
+}
+
+.bg_logo_5 {
+  background: #FD9339;
+}
+
+.bg_logo_6 {
+  background: #E2E2E4;
+}
+
+.bg_logo_7 {
+  background: #C71C36;
+}
+
+.bg_logo_8 {
+  background: #DCF3F9;
+}
+
+.bg_logo_9 {
+  background: #EAEAEA;
+}
+
+.bg_logo_10 {
+  background: #282240;
+}
+
+.bg_logo_11 {
+  background: #1D4568;
+}
+
+.bg_logo_12 {
+  background: #000000;
+}
+
 .h1 {
   font-size: 2.38rem;
   line-height: 3.29rem;
@@ -98,7 +146,7 @@ input {
 .h3_cap {
   font-size: 1rem;
   line-height: 1.14rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .h4 {
@@ -142,6 +190,12 @@ input {
 
 .regular {
   background: #24A3FF;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main {
+  background: #323264;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -384,13 +438,20 @@ input {
   flex-shrink: 1;
 }
 
+.services_header > a:hover, .team_box-desc > a:hover {
+  color: #F0145A;
+}
+
 .team_box {
+  max-height: 344px;
+  overflow-y: hidden;
   display: flex;
   border-radius: 12px;
 }
 .team_box-photo {
   max-width: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+  align-self: center;
 }
 .team_box-desc {
   flex-shrink: 1;
@@ -420,6 +481,28 @@ input {
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px) !important;
+}
+
+.brand_wall-header {
+  text-align: center;
+}
+.brand_wall-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.brand_wall-item {
+  flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+}
+.brand_wall-item > img {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 body {

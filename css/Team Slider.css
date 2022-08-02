@@ -1,10 +1,13 @@
 .team_box {
+  max-height: 344px;
+  overflow-y: hidden;
   display: flex;
   border-radius: 12px;
 }
 .team_box-photo {
   max-width: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
+  align-self: center;
 }
 .team_box-desc {
   flex-shrink: 1;
