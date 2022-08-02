@@ -22,6 +22,10 @@
   background: #EDEDF7;
 }
 
+.bg-white {
+  background: #FFFFFF;
+}
+
 .bg-grad-main {
   background: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
 }

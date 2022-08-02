@@ -18,6 +18,10 @@
   max-width: 30.2%;
 }
 
+.col-nw-4 {
+  max-width: 31.81%;
+}
+
 .col-xl-5 {
   max-width: 41.67%;
 }
@@ -59,13 +63,21 @@
 }
 
 .mb-60 {
-  margin-bottom: 56px;
+  margin-bottom: 57px;
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .mb-15 {
   margin-bottom: 15px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
 }
