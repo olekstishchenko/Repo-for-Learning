@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6bab57e121.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -174,31 +175,70 @@
             </section>
         </div>
     </div>
-    <section class="team mb-30">
+    <section class="team mb-30 ">
         <div class="container">
-            <div class="team_box bg-grey">
-                <div class="team_box-photo col-ns-4">
-                    <img src="img/Team-1-1440.svg" alt="Team-1-1440.svg">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="team_box bg-grey swiper-slide">
+                        <div class="team_box-photo col-ns-4">
+                            <img src="img/Team-1-1440.svg" alt="Team-1-1440.svg">
+                        </div>
+                        <div class="team_box-desc col-ns-8">
+                            <a class="tdn regular f700 p" href="">КОМАНДА></a>
+                            <h1 class="h1 f700 red_text_reversed mb-30">
+                                Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                            </h1>
+                            <h4 class="h4 f700 gray">
+                                Олександр Олександровський
+                            </h4>
+                            <p class="p f400 gray">
+                                Керуючий партнер
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team_box bg-grey swiper-slide">
+                        <div class="team_box-photo col-ns-4">
+                            <img src="img/Team-1-1440.svg" alt="Team-1-1440.svg">
+                        </div>
+                        <div class="team_box-desc col-ns-8">
+                            <a class="tdn regular f700 p" href="">КОМАНДА></a>
+                            <h1 class="h1 f700 red_text_reversed mb-30">
+                                Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                            </h1>
+                            <h4 class="h4 f700 gray">
+                                Олександр Олександровський
+                            </h4>
+                            <p class="p f400 gray">
+                                Керуючий партнер
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team_box bg-grey swiper-slide">
+                        <div class="team_box-photo col-ns-4">
+                            <img src="img/Team-1-1440.svg" alt="Team-1-1440.svg">
+                        </div>
+                        <div class="team_box-desc col-ns-8">
+                            <a class="tdn regular f700 p" href="">КОМАНДА></a>
+                            <h1 class="h1 f700 red_text_reversed mb-30">
+                                Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+                            </h1>
+                            <h4 class="h4 f700 gray">
+                                Олександр Олександровський
+                            </h4>
+                            <p class="p f400 gray">
+                                Керуючий партнер
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="team_box-desc col-ns-8">
-                    <a class="tdn regular f700 p" href="">КОМАНДА></a>
-                    <h1 class="h1 f700 red_text_reversed mb-30">
-                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
-                    </h1>
-                    <h4 class="h4 f700 gray">
-                        Олександр Олександровський
-                    </h4>
-                    <p class="p f400 gray">
-                        Керуючий партнер
-                    </p>
-
-
-                </div>
+               <div class="swiper-pagination"></div>  
             </div>
+
         </div>
+
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 <script>
     $(function(){
@@ -206,6 +246,13 @@
             $('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 600);
             return false;
         });
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
 </script>
 

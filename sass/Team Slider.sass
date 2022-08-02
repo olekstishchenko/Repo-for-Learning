@@ -1,10 +1,13 @@
 .team_box
   display: flex
   border-radius: 12px
+  &-photo
+    max-width: 100%
+    overflow: hidden
   &-desc
     flex-shrink: 1
     flex-grow: 0
-    padding: 30px 44px 25px 35px
+    padding: 30px 44px 25px 32px
     display: flex
     flex-direction: column
   & a
@@ -12,8 +15,17 @@
     margin-bottom: 5px
     line-height: 1rem
   & h1
-    font-size: 2.475rem
     line-height: 2.875rem
+.swiper-pagination
+  position: initial!important
+  margin-top: 30px
+  &-bullet
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,16px))!important
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,16px))!important
+    background: var(--swiper-pagination-bullet-inactive-color,#24A3FF)!important
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px)!important
 
 
 
