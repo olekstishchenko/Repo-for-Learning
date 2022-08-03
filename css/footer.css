@@ -1,0 +1,14 @@
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0 30px;
+}
+.footer_content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer_content-row > div.dot {
+  border-color: #B3B3BA;
+  margin: 10px;
+}
