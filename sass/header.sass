@@ -1,9 +1,15 @@
 .main-container
   padding: 42px 0 64px
+
+
+  @media  screen and (max-width: 768px)
+    padding: 19px 0 64px
+
+
+.header
   background-image: url("../img/H.svg")
   background-repeat: no-repeat
   background-position: top
-  position: relative
 
 
 
@@ -11,7 +17,16 @@
   display: flex
   justify-content: space-between
   align-items: center
-  margin-bottom: 254px
+  padding-bottom: 254px
+  @media  screen and (min-width: 1440px)
+    padding-bottom: 355px
+  @media  screen and (max-width: 1024px)
+    padding-bottom: 240px
+  @media  screen and (max-width: 768px)
+    flex-direction: column
+    align-items: flex-start
+    padding-bottom: 263px
+    row-gap: 23px
 
 
 
@@ -26,7 +41,8 @@
   flex-direction: row
   justify-content: flex-end
   align-items: center
-
+  @media  screen and (max-width: 768px)
+    justify-content: flex-start
 .row
   padding: 7px 0
 
@@ -57,13 +73,27 @@
 
 .main_header
   text-align: center
-  margin-bottom: 432px
+  padding-bottom: 432px
+  @media  screen and (min-width: 1440px)
+    padding-bottom: 535px
+  @media  screen and (max-width: 1024px)
+    padding-bottom: 415px
+  @media  screen and (max-width: 768px)
+    padding-bottom: 483px
 
 .button
   position: absolute
   left: 48.5%
   top: 34.3%
-
+  @media  screen and (min-width: 1440px)
+    left: 49%
+    top: 41%
+  @media  screen and (max-width: 1024px)
+    left: 48%
+    top: 30.65%
+  @media  screen and (max-width: 768px)
+    left: 48.8%
+    top: 64.5%
 .arrow
   position: relative
   width: 42px
@@ -91,6 +121,11 @@
 .tab_menu
   display: flex
   margin-bottom: 58px
+  @media  screen and (max-width: 1024px)
+    margin-bottom: 34px
+  @media  screen and (max-width: 768px)
+    flex-direction: column
+    padding-top: 47px
   & *
     flex-grow: 1
     flex-shrink: 0
@@ -98,8 +133,16 @@
     text-align: end
     padding-right: 56px
     padding-top: 11px
+    & >ul
+      @media  screen and (max-width: 768px)
+        display: flex
+        flex-direction: row
+        overflow-x: scroll
+        padding-bottom: 32px
   &-item
     margin-bottom: 24px
+    @media  screen and (max-width: 768px)
+      margin-right: 27px
     &:last-of-type
        margin-bottom: 10px
     &-link:hover
@@ -110,11 +153,36 @@
     padding-left: 67px
     padding-top: 41px
     border-left: 4px solid #B3B3BA
+    @media  screen and (max-width: 1024px)
+      padding-left: 60px
+      padding-top: 5px
+    @media  screen and (max-width: 768px)
+      border-left: none
+      border-top: 4px solid #B3B3BA
+      padding-left: 0
+      padding-top: 60px
     &-header
       margin-bottom: 28px
+      @media  screen and (max-width: 768px)
+        margin-bottom: 25px
     &-p
       font-size: 1.18rem
-      line-height: 1.87rem
+      line-height: 1.87
+      @media  screen and (max-width: 1024px)
+        display: inline
+
+.dn
+  display: none
+  @media  screen and (max-width: 768px)
+    display: flex
+    margin-bottom: 18px
+.visible
+  display: flex
+  @media  screen and (max-width: 768px)
+    display: none
+
+
+
 
 
 

@@ -4,10 +4,32 @@
   display: flex;
   border-radius: 12px;
 }
+@media screen and (min-width: 1440px) {
+  .team_box {
+    max-height: 298px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .team_box {
+    max-height: 528px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team_box {
+    flex-direction: column;
+    max-height: 936px;
+  }
+}
 .team_box-photo {
-  max-width: 100%;
+  display: flex;
+  justify-content: center;
   overflow-y: hidden;
   align-self: center;
+}
+@media screen and (max-width: 1024px) {
+  .team_box-photo > img {
+    max-width: initial;
+  }
 }
 .team_box-desc {
   flex-shrink: 1;
@@ -15,6 +37,11 @@
   padding: 30px 44px 25px 32px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .team_box-desc {
+    padding-right: 13px;
+  }
 }
 .team_box a {
   letter-spacing: 1px;

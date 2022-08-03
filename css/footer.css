@@ -2,6 +2,12 @@
   display: flex;
   justify-content: space-between;
   padding: 25px 0 30px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .footer_content {
+    padding-bottom: 0;
+  }
 }
 .footer_content-row {
   display: flex;
@@ -11,4 +17,23 @@
 .footer_content-row > div.dot {
   border-color: #B3B3BA;
   margin: 10px;
+}
+
+.dn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .dn {
+    display: flex;
+    margin-bottom: 18px;
+  }
+}
+
+.visible {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .visible {
+    display: none;
+  }
 }

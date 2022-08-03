@@ -3,16 +3,31 @@
   overflow-y: hidden
   display: flex
   border-radius: 12px
+  @media  screen and (min-width: 1440px)
+    max-height: 298px
+  @media  screen and (max-width: 1024px)
+    max-height: 528px
+  @media  screen and (max-width: 768px)
+    flex-direction: column
+    max-height: 936px
+
   &-photo
-    max-width: 100%
+    display: flex
+    justify-content: center
     overflow-y: hidden
     align-self: center
+    & >img
+      @media  screen and (max-width: 1024px)
+        max-width: initial
+
   &-desc
     flex-shrink: 1
     flex-grow: 0
     padding: 30px 44px 25px 32px
     display: flex
     flex-direction: column
+    @media  screen and (max-width: 768px)
+      padding-right: 13px
   & a
     letter-spacing: 1px
     margin-bottom: 5px
