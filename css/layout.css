@@ -90,7 +90,7 @@
   margin-bottom: 5px;
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
   .col-xxl-3 {
     max-width: 25%;
   }
