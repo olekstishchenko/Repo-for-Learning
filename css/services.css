@@ -4,12 +4,25 @@
   flex-wrap: wrap;
   row-gap: 60px;
 }
+@media screen and (max-width: 580px) {
+  .services_wrapper {
+    row-gap: 31px;
+  }
+}
 
 .services_card {
   flex-grow: 1;
   flex-shrink: 1;
 }
 
+@media screen and (max-width: 580px) {
+  .services_header {
+    margin-bottom: 36px;
+  }
+}
+.services_header > h1 {
+  line-height: 2.3125rem;
+}
 .services_header > a:hover, .team_box-desc > a:hover {
   color: #F0145A;
 }

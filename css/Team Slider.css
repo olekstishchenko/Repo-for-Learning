@@ -1,3 +1,9 @@
+@media screen and (max-width: 580px) {
+  .team {
+    margin-bottom: 58px;
+  }
+}
+
 .team_box {
   max-height: 344px;
   overflow-y: hidden;
@@ -18,6 +24,11 @@
   .team_box {
     flex-direction: column;
     max-height: 936px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .team_box {
+    max-height: 1087px;
   }
 }
 .team_box-photo {
@@ -43,6 +54,12 @@
     padding-right: 13px;
   }
 }
+@media screen and (max-width: 580px) {
+  .team_box-desc {
+    word-wrap: anywhere;
+    line-height: 1.875rem;
+  }
+}
 .team_box a {
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -55,6 +72,11 @@
 .swiper-pagination {
   position: initial !important;
   margin-top: 30px;
+}
+@media screen and (max-width: 580px) {
+  .swiper-pagination {
+    margin-top: 24px;
+  }
 }
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 16px)) !important;

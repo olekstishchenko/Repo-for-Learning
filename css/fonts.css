@@ -38,6 +38,19 @@
   font-size: 0.75rem;
 }
 
+@media screen and (max-width: 580px) {
+  .h1m {
+    font-size: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .h2m {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
 .f400 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;

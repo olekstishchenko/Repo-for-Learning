@@ -3,12 +3,21 @@
   justify-content: space-between
   flex-wrap: wrap
   row-gap: 60px
+  @media  screen and (max-width: 580px)
+    row-gap: 31px
+
 
 
 
 .services_card
   flex-grow: 1
   flex-shrink: 1
+.services_header
+  @media  screen and (max-width: 580px)
+    margin-bottom: 36px
+  & >h1
+    @media  screen and (max-width: 580px)
+    line-height: 2.3125rem
 .services_header>a:hover, .team_box-desc>a:hover
   color: #F0145A
 

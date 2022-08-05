@@ -20,6 +20,11 @@
     flex: 1 1 33.33333%;
   }
 }
+@media screen and (max-width: 580px) {
+  .brand_wall-item {
+    flex: 1 1 100%;
+  }
+}
 .brand_wall-item:hover {
   border: 5px solid white;
 }
@@ -27,4 +32,10 @@
   display: block;
   max-width: 100%;
   overflow: hidden;
+}
+
+@media screen and (max-width: 580px) {
+  .dn580 {
+    display: none;
+  }
 }
